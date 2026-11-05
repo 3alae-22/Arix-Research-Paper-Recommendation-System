@@ -1,0 +1,14 @@
+{
+  "base_model": "BAAI/bge-base-en-v1.5",
+  "max_seq_length": 512,
+  "lora_r": 16,
+  "target_modules": [
+    "query",
+    "key",
+    "value",
+    "dense"
+  ],
+  "learning_rate": 2e-05,
+  "margin": 0.2,
+  "best_epoch": 10
+}
