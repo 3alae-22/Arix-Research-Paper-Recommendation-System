@@ -4,6 +4,7 @@ version = "0.1.0"
 description = "arXiv metadata fetcher for a research paper recommendation system"
 requires-python = ">=3.11"
 dependencies = [
+    "arxiv>=4.0.2",
     "matplotlib>=3.11.2",
     "mlflow>=3.17.2",
     "nbformat>=4.2.0",
@@ -14,6 +15,7 @@ dependencies = [
     "scipy>=1.17.1",
     "seaborn>=0.13.2",
     "sentence-transformers>=6.2.0",
+    "streamlit>=1.66.1",
     "umap-learn>=0.5.12",
     "wordcloud>=1.9.6",
 ]
