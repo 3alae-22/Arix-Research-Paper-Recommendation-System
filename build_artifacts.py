@@ -8,12 +8,12 @@ from sklearn.preprocessing import normalize
 
 DATA_DIR, ART_DIR = Path("data"), Path("artifacts")
 ART_DIR.mkdir(exist_ok=True)
-K = 6
+K = 9
 
 X_norm = normalize(np.load(DATA_DIR / "arxiv_embeddings_v2.npy"))
-papers = pd.read_csv(DATA_DIR / f"data_clustered_k{K}.csv")
+papers = pd.read_csv(DATA_DIR / f"data_clustered_k{K}_v2.csv")
 centroids = (
-    pd.read_csv(DATA_DIR / f"centroids_k{K}.csv").drop(columns="cluster").to_numpy()
+    pd.read_csv(DATA_DIR / f"centroids_k{K}_v2.csv").drop(columns="cluster").to_numpy()
 )
 assert len(papers) == len(X_norm), "CSV rows and embeddings are not aligned"
 
